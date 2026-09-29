@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --boja-primarna: #21365f;
+  --boja-primarna-tamna: #172746;
+  --boja-primarna-svetla: #3a5788;
+  --boja-akcenat: #e2a63b;
+  --boja-akcenat-tamna: #c98a1f;
+
+  --boja-uspeh: #2f9e5b;
+  --boja-uspeh-bg: #e5f6ec;
+  --boja-greska: #d94f4f;
+  --boja-greska-bg: #fbeaea;
+  --boja-cekanje: #dc9524;
+  --boja-cekanje-bg: #fdf2df;
+  --boja-neutralno: #6b7280;
+  --boja-neutralno-bg: #eef0f3;
+
+  --boja-grafik-1: #3a5788;
+  --boja-grafik-2: #e2a63b;
+
+  --bg: #f6f4ef;
+  --bg-povrsina: #ffffff;
+  --bg-prigušen: #eef0f3;
+  --tekst: #2a2f3a;
+  --tekst-prigušen: #6b7280;
+  --tekst-h: #14182a;
+  --granica: #e2e1dc;
+  --senka: 0 1px 2px rgba(20, 24, 42, 0.04), 0 8px 24px -8px rgba(20, 24, 42, 0.12);
+  --senka-istaknuta: 0 4px 12px rgba(20, 24, 42, 0.08), 0 16px 40px -12px rgba(20, 24, 42, 0.18);
+
+  --radijus: 12px;
+  --radijus-mali: 8px;
+  --font-naslov: 'Manrope', system-ui, 'Segoe UI', sans-serif;
+  --font-telo: 'Inter', system-ui, 'Segoe UI', sans-serif;
+
+  color-scheme: light;
+  font-family: var(--font-telo);
+  color: var(--tekst);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-naslov);
+  color: var(--tekst-h);
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.75rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(1.35rem, 1.15rem + 0.8vw, 1.85rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 0.75em;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--boja-primarna);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 1.25em;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
